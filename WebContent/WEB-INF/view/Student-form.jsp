@@ -13,17 +13,28 @@
 
 	<form:form action="processForm" modelAttribute="student">
 	
-	First name: <form:input path="firstName"/>
+		First name: <form:input path="firstName"/>
 	
-	<br> <br>
+		<br> <br>
 	
-	Last Name: <form:input path="LastName" />
+		Last Name: <form:input path="LastName" />
 	
-	<br><br>
+		<br><br>
+	
+		Country:
+	
+		<form:select path="country">
+	
+			<form:options items="${student.countryOptions }" />
+	
+		</form:select>
 
-	<input type="submit" value="Submit" />
+		<br><br>
+
+		<input type="submit" value="Submit" />
 
 	</form:form>
+	
 </body>
 
 
