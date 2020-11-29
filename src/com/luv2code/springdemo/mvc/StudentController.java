@@ -28,7 +28,7 @@ public class StudentController {
 		System.out.println("theStudent: " + theStudent.getFirstName()
 							+ " " +  theStudent.getLastName());
 		
-		return "student-confirmation"; 
+		return "student-confirmation";
 	}
 	
 }
